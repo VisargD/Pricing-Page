@@ -32,7 +32,7 @@ nav {
     font-size: 1em;
     padding: 0.5em 1em;
     margin-left: 0.5em;
-    margin-right: 0.5em;
+    
     border: none;
     cursor: pointer;
     font-weight: 700;
@@ -56,12 +56,13 @@ nav {
     flex-direction: column;
     align-items: center;
     color:  #05386b;
+    text-align: center;
 } 
 
 .tagline-icons {
     height: 1em;
     width: 1em;
-    margin-left: 3px;
+    margin-left: 1em;
 }
 
 .pricing-container {
@@ -82,6 +83,10 @@ nav {
 
 .pricing-image {
     max-width: 100%;
+}
+
+img:first-child {
+    margin-left: 0;
 }
 
 .pricing-type {
@@ -110,4 +115,50 @@ li:last-child {
     padding: 1em;
     font-weight: bold;
     color: #05386b;
+}
+
+@media (max-width: 430px) {
+    #name {
+        font-size: 1.2em;
+    }
+    .buttons {
+        font-size: 0.6em;
+        font-weight: 500;
+    }
+    .tagline {
+        font-size: 0.6em;
+    }    
+    .pricing-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    #name {
+        font-size: 1.5em;
+    }
+    .buttons {
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+    .tagline {
+        font-size: 0.75em;
+    }
+    .trial-button { 
+        padding: 0.5em 2em;
+        font-size: 1em;
+    }
+    nav {
+        margin: 0;
+    }
+    .pricing-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .pricing-container {
+        flex-direction: column;
+        width: 60%
+    }
 }
