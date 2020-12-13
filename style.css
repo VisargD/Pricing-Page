@@ -4,7 +4,7 @@ html, body {
     font-family: Lato, serif;    
 }
 
-ul {
+.features {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -20,44 +20,12 @@ nav {
     color: #05386b;
 }
 
-#name {
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 2em;    
-}
-
-.nav-buttons {
-    background-color: #05386b;
-    border-radius: 24px;
-    color: white;
-    font-size: 1em;
-    padding: 0.5em 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition-duration: 0.3s;
-}
-
-.nav-buttons:hover {
-    transform: translateY(-2px);    
-}
-
 .button-div {
     display: flex;
     align-items: center;
 }
 
-.tagline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:  #05386b;
-}
-
-#trial-button {
+.buttons {
     background-color: #05386b;
     border-radius: 24px;
     color: white;
@@ -69,8 +37,27 @@ nav {
     cursor: pointer;
     font-weight: 700;
     transition-duration: 0.3s;
+    text-decoration: none;
 }
- 
+
+.buttons:hover {
+    transform: translateY(-2px);    
+}
+
+#name {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2em;    
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #05386b;
+} 
+
 .tagline-icons {
     height: 1em;
     width: 1em;
@@ -80,7 +67,7 @@ nav {
 .pricing-container {
     display: flex;    
     justify-content: center;
-    width: 60%;
+    width: 80%;
     margin: 2em auto;
 }
 .pricing-plan {
@@ -89,8 +76,38 @@ nav {
     padding: 1em;
     border-radius: 24px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-image {
     max-width: 100%;
+}
+
+.pricing-type {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #05386b;
+}
+
+li {
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: #05386b99;
+    padding: 0.5em;    
+    font-weight: 600;
+}
+
+li:last-child {
+    border-top: none;
+}
+
+.price {
+    font-size: 1.5em;
+    padding: 1em;
+    font-weight: bold;
+    color: #05386b;
 }
