@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    background-color:#5cdb95;
+    font-family: Lato, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    font-weight: bold;    
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 0.5em;
+    color: #05386b;
+}
+
+#name {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+
+.nav-buttons {
+    background-color: #05386b;
+    border-radius: 24px;
+    color: white;
+    font-size: 1;
+    padding: 0.5em 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition-duration: 0.3s;
+}
+
+.nav-buttons:hover {
+    transform: translateY(-2px);    
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+}
+ 
